@@ -7,7 +7,7 @@ import openai
 app = Flask(__name__)
 
 # Set your OpenAI GPT-3 API key
-openai.api_key = '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'
+openai.api_key = os.environ.get('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')
 
 @app.route('/')
 def index():
