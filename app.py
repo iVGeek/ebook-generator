@@ -22,7 +22,7 @@ def generate_ebook():
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt=prompt,
-        max_tokens=2000  # Set your desired word limit
+        max_tokens=99999999999  # Set your desired word limit
     )
 
     generated_text = response['choices'][0]['text']
